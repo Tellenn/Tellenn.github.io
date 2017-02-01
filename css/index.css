@@ -1,0 +1,13 @@
+body{
+	font: 10pt verdana;
+	background-color: lightgrey;				
+	margin-left:6%;
+	margin-right:6%;
+	text-align : justify;
+}
+h1{
+	text-align: center;
+}
+h2{
+	margin-left: 14%
+}
