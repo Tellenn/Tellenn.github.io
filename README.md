@@ -1,14 +1,16 @@
 TODO on this website :
 
-- Better index, the current is so-so
 - Do a short presentation page of the tux with screenshots
-- Change the package in the github file to only the sources
-- Add more info contact
+- Make a french version of the website
+- Make an english version of the resume
 - Make a small tic tac toe
 - Make a link and page for the PAI project
-- Change the LinkedIn logo
+- Some other stuff to be coming
+- Set up a nodeJS server
+
 
 Done with this website :
 
+- Added contact info
 - Add link to the Tux java game
 - Make it online
