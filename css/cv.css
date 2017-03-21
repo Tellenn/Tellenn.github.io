@@ -51,6 +51,12 @@
 				min-width: 100px;
 				
 			}
+			.tabl td{
+				min-width : 200px;
+			}
+			.cent{
+				text-align: center;	
+			}
 
             li {
                 font:13pt verdana;
