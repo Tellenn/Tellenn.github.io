@@ -31,7 +31,21 @@
 		<br/>
 		<br/>
 		<br/>
-		<a href="README.md"> What i'm going to do with the website</a>
+		<a> What i'm going to do with the website : </a>
+		<button onclick="myFunction()">show/hide</button>
+		<div id="myDIV" style="display : none">
+			<iframe id="textfile" src="README.MD"></iframe>
+		</div>
+		<script>
+			function myFunction() {
+				var x = document.getElementById('myDIV');
+				if (x.style.display === 'none') {
+					x.style.display = 'block';
+				} else {
+					x.style.display = 'none';
+				}
+			}
+		</script>
 		<h2>Contact : </h2>
 		<a href="https://fr.linkedin.com/in/kyllian-perrin-524105a5"><img class="logo" src="ressources/linkedin.jpg" alt="LinkedIn"/></a>
 		<a href="http://github.com/tellenn"><img class="logo" src="ressources/github.png" alt="GitHub"/></a>
