@@ -1,53 +1,77 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!--Hey, your watching my code, that's great ! 
-			I'm currently looking for a internship in a company from end of May to August, 
-			contact me if you're interested, and we could talk more ! -->
 		<title>PERRIN Kyllian</title>
 		<link rel="shortcut icon" href="ressources/onglet.ico">
 		<link rel="stylesheet" href="css/index.css"/>
+		<script src="js/simpleInterraction.js"></script>
+		<script src="js/jquery-3.2.1.min.js"></script>
+
 	</head>
 	<body>
-		<h1>Hi</h1>
-		<p>Welcome to my personnal website, developped from scratch, for now, it's not really great, but give me time!</p>
-		<h2>Who am I?</h2>
-		<p>I'm a student in computer science and management in the UGA (Université Grenoble Alpes), and you're on my website !<br/>
-			From here you can enjoy some of my personnal work, and some project I've done while studying.<br/>
-			Each project has its own page with information on it, so be curious !<br/>
-			Also you'll be able to find my resume and some of my contact info, don't hesitate to reach me if you have any information.</p>
-		<a> My resume in <a href="html/cvfr.html">french</a><a> and in </a><a href="html/cven.html"> english</a><br/>
+		<section class="hidden" id="englishSection">
+			<h1>Hi</h1><button class="button langage" onclick="changeLanguage(false);">Français</button>
+			<p>Welcome to my personnal website, developped from scratch, for now, it's not really great, but give me time!</p>
+			<h2>Who am I?</h2>
+			<p>I'm a student in computer science and management in the UGA (Université Grenoble Alpes), and you're on my website !<br/>
+				From here you can enjoy some of my personnal work, and some project I've done while studying.<br/>
+				Each project has its own page with information on it, so be curious !<br/>
+				Also you'll be able to find my resume and some of my contact info, don't hesitate to reach me if you have any information.</p>
+			<a> My resume in <a href="html/cvfr.html">french</a><a> and in </a><a href="html/cven.html"> english</a><br/>
+			<br/>
+			<h2>School projects : </h2>
+			<h3>3rd year</h3>
+			<a>	A small game that I made with classmates</a>
+			<a href="tuxLetterGame">	here</a>
+			<br/>
+			<a> Our integration project (WIP)</a>
+			<a href="PAI"></a>
+			<br/>
+			<br/>
+			<a> What i'm going to do with the website : </a>
+			<button class="button" onclick="toogleTodoList()">show/hide</button>
+			<div class="hidden spoiler" id="spoiler">
+				<iframe id="textfile" src="README.md"></iframe>
+			</div>
+		</section>
+		<section class="" id="frenchSection">
+		<h1>Bonjour !</h1><button class="button langage" onclick="changeLanguage(true);">English</button>
+		<p>Bienvenue sur mon site personnel, développé depuis 0. Pour l'instant, il n'est pas vraiment superbe, mais donnez moi du temps ! :)</p>
+		<h2>Qui suis-je ?</h2>
+		<p>Je suis un étudiant en Master MIAGE(Methodes Informatique Appliquée a la Gestion d'Entreprise) à l'Université Grenoble Alpes,<br/>
+			Depuis ici, vous pouvez consulter mes projets universitaire ou bien quelques projets personnels<br/>
+			Chaque projet aura sa propre pages avec quelques informations sur son contextes.<br/>
+			Vous pouvez aussi accéder a mon CV et où me contacter, alors n'hésitez pas si vous avez des questions !</p>
+		<a> Mon CV en <a href="html/cvfr.html">français</a><a> et en </a><a href="html/cven.html"> englais</a><br/>
 		<br/>
-		<h2>School projects : </h2>
-		<h3>3rd year</h3>
-		<a>	A small game that I made with classmates</a>
-		<a href="tuxLetterGame">	here</a>
-		<br/>
-		<a> Our integration project (WIP)</a>
+		<h2>Projet d'école : </h2>
+		<h3>3eme année</h3>
+		<a>	Un jeu d'eveil aux mots fait en java :</a>
+		<a href="tuxLetterGame"> ici</a><br/>
+		<a> Un projet d'integration de multiple elements avec des langages differents (en travail)</a>
 		<a href="PAI"></a>
 		<br/>
-		<a> My tic tac toe project (WIP)</a>
-		<a href=""></a>
 		<br/>
-		<br/>
-		<br/>
-		<a> What i'm going to do with the website : </a>
-		<button onclick="myFunction()">show/hide</button>
-		<div id="myDIV" style="display : none">
+		<a> Ce qui est prévu que je fasses sur le site : </a>
+		<button class="button" onclick="toogleTodoList()">montrer/cacher</button>
+		<div class="hidden spoiler" id="spoiler">
 			<iframe id="textfile" src="README.md"></iframe>
 		</div>
-		<script>
-			function myFunction() {
-				var x = document.getElementById('myDIV');
-				if (x.style.display === 'none') {
-					x.style.display = 'block';
-				} else {
-					x.style.display = 'none';
-				}
-			}
-		</script>
+		</section>
+		<!--<script>
+			function toogleTodoList() {
+    var x = document.getElementById('spoiler');
+	console.log(x.classlist);
+    if (x.classlist.contains("hidden")){
+        x.classlist.remove("hidden");
+    }else{
+        x.classlist.add("hidden");
+    }
+}
+		</script>-->
 		<h2>Contact : </h2>
 		<a href="https://fr.linkedin.com/in/kyllian-perrin-524105a5"><img class="logo" src="ressources/linkedin.jpg" alt="LinkedIn"/></a>
 		<a href="http://github.com/tellenn"><img class="logo" src="ressources/github.png" alt="GitHub"/></a>
+		<a href="https://www.facebook.com/profile.php?id=100012750094017"><img class="logo" src="ressources/facebook.png" alt="Facebook"/></a>
 	</body>
 </html>
